@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Winnings - Earn Rewards by Viewing Ads</title>
+    
+    <!-- Google AdSense -->
+    <script data-ad-client="YOUR_ADSENSE_CLIENT_ID" async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_ANALYTICS_ID');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Modern CSS Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #d3d3d3 0%, #f0f0f0 100%);
+            color: #444;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 60px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: #444;
+        }
+
+        .ad-container {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            max-width: 800px;
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ad-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .ad-container h1 {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .ad-container p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #222;
+            color: #aaa;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Google AdSense Ad Slot */
+        .ad-slot {
+            display: block;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 12px;
+            background-color: #f9f9f9;
+            max-width: 600px;
+            height: 300px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2rem;
+                padding: 15px 40px;
+            }
+
+            .ad-container {
+                padding: 30px;
+            }
+
+            .ad-container h1 {
+                font-size: 1.8rem;
+            }
+
+            .ad-container p {
+                font-size: 1rem;
+            }
+
+            .ad-slot {
+                height: 250px;
+            }
+        }
+
+        /* Button for engaging interaction */
+        .engage-btn {
+            padding: 15px 30px;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .engage-btn:hover {
+            background-color: #005f8d;
+            transform: translateY(-3px);
+        }
+
+        /* Add subtle animation to page entrance */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        body {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Top Winnings
+    </header>
+
+    <div class="ad-container">
+        <h1>Earn Rewards by Viewing Ads</h1>
+        <p>Earn rewards while interacting with our sponsors' ads. Every click brings you closer to winning big!</p>
+
+        <!-- Google AdSense Ad Slot -->
+        <div class="ad-slot">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="YOUR_ADSENSE_CLIENT_ID"
+                 data-ad-slot="YOUR_ADSENSE_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <button class="engage-btn">Check My Rewards</button>
+    </div>
+
+    <footer>
+        © 2024 Top Winnings - All rights reserved.
+    </footer>
+
+</body>
+</html>
